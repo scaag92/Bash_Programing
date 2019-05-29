@@ -1,7 +1,21 @@
+
 #Useful Bash Commands
+
 echo ~- = Show the last working directory location (dash symbol)
+
 touch {hello,mis,perros} = To repeat a command without ride in every case
+
 touch fruit_{1..1000} = To print from 1 to 1000
+
 echo {A..Z} = To print from A to Z
+
 touch {A..D}_{1..10} = It 
+
 ls -1 | wc -l = Merge of two pipes ls -1 (List files in a directory) wc - l (Count the lines of the output)
+
+grep -i break-in auth.log | awk {'print $12'} = I use this to fing 'break-in' into the auth.log file ignoring uppcases and print the every twuelve group on the line.
+
+ping -c 2 google.com | grep 'icmp' | cut -d = -f 1 
+ping -c 2 google.com = Ping -c count every ping
+grep 'icmp' = Find and underlines icmp word into the ping output
+cut -d = Define the output y every equal sign and list the field number 1
